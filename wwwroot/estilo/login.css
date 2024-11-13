@@ -36,7 +36,11 @@
     }
 
     .container button {
+<<<<<<< HEAD
         background-color: #0066b3;
+=======
+        background-color: #4b9fea;
+>>>>>>> 6d39d0f1343eaba7d532b97a644cf13951c01201
         color: #fff;
         font-size: 12px;
         padding: 10px 45px;
@@ -135,9 +139,15 @@
     border-radius: 0;
 }
 .toggle {
+<<<<<<< HEAD
     background-color: #0066b3;
     height: 100%;
     background: #0066b3;
+=======
+    background-color: #1dbf73;
+    height: 100%;
+    background: #4b9fea;
+>>>>>>> 6d39d0f1343eaba7d532b97a644cf13951c01201
     color: #fff;
     position: relative;
     left: -100%;
@@ -183,9 +193,125 @@
     transform: translateX(200%);
 }
 
+<<<<<<< HEAD
     
 
    
       
+=======
+    /* Faz a imagem de fundo preencher toda a tela 
+    .main-content {
+        background-image: url(/img/tratamentos.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh; /* Preenche toda a altura da tela 
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente 
+        align-items: center; /* Centraliza verticalmente 
+    }
+
+    /* Contêiner das seções de login e boas-vindas 
+    .text {
+        display: flex;
+        width: 80%; /* Ajusta a largura total das duas seções juntas 
+        max-width: 800px; /* Limita a largura máxima 
+        background-color: rgba(255, 255, 255, 0.9); /* Fundo para destacar 
+        border-radius: 10px;
+        overflow: hidden; /* Esconde bordas arredondadas 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  Adiciona sombra para destaque
+    }
+
+
+
+    /* Formulário de Login 
+    .login-form {
+        width: 50%;
+        padding: 40px;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcome-section {
+        width: 50%;
+        background-color: #4b9fea;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 40px;
+    }
+
+
+    .create-account {
+        background-color: #4b9fea;
+        color: white;
+        padding: 12px;
+        border:solid;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+    }
+
+    /* Estilo dos elementos do formulário 
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        color: #3F3F3F;
+    }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input[type="text"], form input[type="password"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: calc(100% - 22px);
+            background-color: #D9D9D9;
+            color: #3F3F3F;
+        }
+
+        form button {
+            background-color: #4b9fea;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+            form button:hover {
+                background-color: #377bb5;
+            }
+
+        form .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            form .remember-forgot a {
+                color: #4b9fea;
+                text-decoration: none;
+            }
+
+               form .remember-forgot a:hover {
+                    text-decoration: underline;
+                }
+        */
+>>>>>>> 6d39d0f1343eaba7d532b97a644cf13951c01201
 
 

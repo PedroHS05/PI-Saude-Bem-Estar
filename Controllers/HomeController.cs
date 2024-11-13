@@ -56,11 +56,14 @@ namespace PROJETO_INTERCISCIPLINAR.Controllers
             return View();
         }
 
+<<<<<<< HEAD
         public IActionResult Perfil()
         {
             return View();
         }
 
+=======
+>>>>>>> 6d39d0f1343eaba7d532b97a644cf13951c01201
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
