@@ -1,0 +1,83 @@
+﻿@{
+    <title>@ViewData["Title"]O que é o Autismo - Autismo em Foco</title>
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/estilo/autismo.css" />
+}
+
+<head>
+
+    <script>
+        function openCity(evt, cityName) {
+            // declaração de todas as vareaveis
+            var i, tabcontent, tablinks;
+
+            // Pega todos elementos como class="tabcontent"
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Pega todos os elementos com class="tablinks e remove a classe "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Mostra o tab selecionado, e adiciona uma class "active" para os botões que forem abertos no tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</head>
+
+<body>
+  
+    <div class="img-container">
+        <div class="text">
+            <h1>O que é o Autismo?</h1>
+            <p>Marcos Históricos</p>
+        </div>
+    </div>
+    <main>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'carac')">Características</button>
+            <button class="tablinks" onclick="openCity(event, 'histo')">A História do Autismo</button>
+        </div>
+
+        <div id="carac" class="tabcontent">
+            <h2 class="subtitulo">Características</h2>
+            <p class="principal">
+                O Transtorno do Espectro do Autismo (TEA) consiste em diversas desordens do
+                desenvolvimento neurológico que se manifestam desde o nascimento ou início da infância, incluindo o
+                Autismo Infantil Precoce, Autismo de Kanner, Autismo de Alto Funcionamento, Autismo Atípico, entre
+                outros. Pessoas dentro do espectro podem apresentar déficits na comunicação social e padrões restritos e
+                repetitivos de comportamento. Apesar de comum em crianças e bebês, o autismo é uma condição permanente
+                que acompanha a pessoa ao longo da vida.<br>
+                O Transtorno do Espectro Autista não é uma doença, e sim um transtorno neurodivergente, portanto não possui cura.
+                Apesar de não podermos tratar o autismo, é possível intervir com terapias para que a pessoa tenha melhor qualidade de vida,
+                como aprimorar a comunicação, a concentração e diminuir os movimentos repetitivos que podem competir com a aprendizagem.
+            </p>
+        </div>
+
+        <div id="histo" class="tabcontent">
+            <h2 class="subtitulo">A história do Autismo</h2>
+            <p class="principal">
+                O autismo foi inicialmente estudado pelo psiquiatra austríaco Leo Kanner em 1943, que
+                observou comportamentos atípicos em crianças relacionados à dificuldade de estabelecer relações sociais.
+                Posteriormente, novas pesquisas na década de 50 e 60 trouxeram mais dúvidas e confusão, como a ideia de
+                que relações pobres entre pais e filhos poderiam ser a causa do autismo. No entanto, estudos
+                subsequentes mostraram que o autismo é um transtorno cerebral presente desde a infância. Temple Grandin,
+                uma autista americana, revolucionou a indústria pecuária com base em suas experiências. Michael Rutter,
+                um psicólogo britânico, identificou quatro critérios do autismo que influenciaram sua definição no
+                DSM-III em 1980. Lorna Wing, uma psiquiatra inglesa, defendeu uma abordagem mais ampla do autismo,
+                reconhecendo-o como um espectro de condições. Em 2007, a ONU proclamou o Dia Mundial de Conscientização
+                sobre o Autismo para promover o diálogo e compreensão sobre o transtorno.
+            </p>
+        </div>
+    </main>
+
+</body>
+
+</html>

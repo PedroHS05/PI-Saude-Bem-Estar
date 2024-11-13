@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="imagex/svg" href="/img/VectorLoguinho2.0.svg">
+
+    <link rel="stylesheet" href="~/estilo/home.css" />
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/img/logo_001-removebg-preview.png" alt="Logo">
+                </a>
+            </div>
+            <div class="nav-list">
+                <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                <a asp-area="" asp-controller="Home" asp-action="Autismo">O que é o Autismo?</a>
+                <a asp-area="" asp-controller="Home" asp-action="leisedireitos">Leis e Direitos</a>
+                <a asp-area="" asp-controller="Home" asp-action="Eventos">Eventos</a>
+                <a asp-area="" asp-controller="Home" asp-action="Tratamentos">Tratamentos</a>
+                <a asp-area="" asp-controller="Home" asp-action="SobreNos">Sobre Nós</a>
+                <a asp-area="" asp-controller="Home" asp-action="Perfil">Perfil</a>
+
+                @if (ViewBag.IsLoggedIn != true)
+                {
+                    <!-- Exibe Login/Cadastro se o usuário não estiver logado -->
+                    <a asp-area="" asp-controller="Home" asp-action="login" id="btn">Login/Cadastro</a>
+                }
+                else
+                {
+                    <!-- Exibe Logout se o usuário estiver logado -->
+                    <a asp-area="" asp-controller="User" asp-action="Logout" id="btn">Logout</a>
+                }
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div class="sitemap">
+            <h3>Sitemap</h3>
+            <ul>
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Autismo">O que é o Autismo?</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="LeisDireitos">Leis e Direitos</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Eventos">Eventos</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Tratamentos">Tratamentos</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="SobreNos">Sobre Nós</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="login">Login/Cadastro</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Contato">Contato</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <p>Autismo em Foco</p>
+            <p>&copy;2024 Todos os direitos reservados</p>
+            <p>Avenida dos Estados, 1990 - Vila Fontana - São Paulo(SP)</p>
+            <p>Médica Responsável: Maria de Fátima Nascimento</p>
+            <p>CRM - 89552</p>
+        </div>
+        <div class="sociais">
+            <h3>Redes Sociais</h3>
+            <ul>
+                <li><a href="#"><img src="~/img/facebook.png" alt="Facebook" width="20px" height="20px;"></a></li>
+                <li><a href="#"><img src="~/img/instagram__1__Easy-Resize.com__2_-removebg-preview.png" alt="Instagram" width="20px" height="20px;"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
