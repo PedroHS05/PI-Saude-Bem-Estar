@@ -1,0 +1,36 @@
+﻿@{
+    <title>@ViewData["Title"]Home - Autismo em Foco</title>
+    var userNome = Context.Session.GetString("UserNome"); // Usando Context em vez de HttpContext
+}
+
+@section Styles {
+    <link rel="stylesheet" href="/estilo/home.css" />
+}
+
+
+
+<body>
+    <main class="main-content">
+        <div class="text">
+            <h1>
+                Bem-Vindo
+                @if (!string.IsNullOrEmpty(userNome))
+                {
+                    <text>@userNome!</text>
+                }
+                else
+                {
+                    <text>ao Autismo em Foco!</text>
+                }
+            </h1>
+            <div class="button-container">
+                <a href="@Url.Action("Autismo", "Home")">
+                    <button class="btn">Saiba Mais</button>
+                </a>
+                <a href="@Url.Action("Tratamentos", "Home")">
+                    <button class="btn">Encontre Ajuda</button>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>

@@ -1,0 +1,89 @@
+﻿@{
+    ViewData["Title"] = "Contato Page";
+}
+
+@section Styles
+{
+    <link href="/estilo/contato.css" rel="stylesheet" />
+}
+
+<body>
+   
+    <main>
+        <h1 class="feed">Envie o seu Feedback!</h1>
+        <div class="text">
+            <h2>Contato</h2>
+        </div>
+        </div>
+
+        <div class="form-container">
+
+            <p class="txt">
+                Entre em contato conosco através do formulário abaixo ou mande-nos um e-mail para
+                <span style="color:#007bff">contato@autismoemfoco.br</span>.
+                Responderemos o mais breve possível.
+            </p>
+
+            <form>
+
+                <input id="nome" type="text" placeholder="Digite seu nome aqui" required>
+                <br><br>
+
+
+                <input id="telefone" type="text" placeholder="Digite seu telefone aqui" required>
+                <br><br>
+
+
+                <input id="email" type="email" placeholder="Digite seu email aqui" required>
+                <br><br>
+
+                <textarea id="mensagem" placeholder="Digite a sua mensagem aqui" required></textarea>
+                <br><br>
+
+                <input type="submit" value="Enviar Mensagem">
+
+            </form>
+
+        </div>
+
+        <section>
+            <span class="title">Veja também!</span>
+            <div class="container">
+                <div class="card">
+                    <img src="/img/img2-489716_640.png" alt="nature">
+                    <div class="cont">
+                        <h3>Eventos</h3>
+                        <p>Conheça os eventos que divulgam conhecimento sobre o autismo</p>
+                        <a href="eventos.html" class="btn">LEIA MAIS</a>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="/img/crianca-e-mae-brincam-de-brinquedo-de-barro-colorido_488220-36218.avif" alt="ocean">
+                    <div class="cont">
+                        <h3>Tratamentos</h3>
+                        <p>Conheça algumas estratégias importantes para o tratamento do autismo.</p>
+                        <a href="tratamentos.html" class="btn">LEIA MAIS</a>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="/img/autismo-infantil_25821_l.webp" alt="tree">
+                    <div class="cont">
+                        <h3>Leis e Direitos</h3>
+                        <p>Conheça as Leis e Direitos que protegem os portadores de TEA.</p>
+                        <a href="leisedireitos.html" class="btn">LEIA MAIS</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+  
+</body>
+
+</html>

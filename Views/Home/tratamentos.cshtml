@@ -1,0 +1,166 @@
+﻿@section Styles {
+    <link rel="stylesheet" href="~/estilo/tratamentos.css" />
+}
+<head>
+    <title>@ViewData["Title"]Tratamentos - Autismo em Foco</title>
+    <script>
+        function openCity(evt, cityName) {
+            // declaração de todas as vareaveis
+            var i, tabcontent, tablinks;
+
+            // Pega todos elementos como class="tabcontent"
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Pega todos os elementos com class="tablinks e remove a classe "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Mostra o tab selecionado, e adiciona uma class "active" para os botões que forem abertos no tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</head>
+<body>
+   
+    <div class="img-container3">
+        <div class="text">
+            <h1>Tratamentos</h1>
+            <p>Práticas que podem ajudar</p>
+        </div>
+    </div>
+    <main>
+        <h2 class="subtitulo">Qual é o melhor tratamento para o autismo?</h2>
+        <br>
+        <p class="principal">
+            Para um tratamento eficaz e seguro, é indicado que seja feito com uma equipe
+            multidisciplinar, composta por
+            profissionais de saúde que indica, terapias específicas para cada indivíduo, as quais muitas vezes devem ser
+            feitas por toda vida. A equipe pode ser composta de:
+        </p>
+        <ul class="lista">
+            <li class="lista1">Médico</li>
+            <li class="lista1">Fisioterapeuta</li>
+            <li class="lista1">Psicoterapeuta</li>
+            <li class="lista1">Terapeuta Ocupacional</li>
+            <li class="lista1">Fonoaudióloga</li>
+
+        </ul><br>
+        <p class="principal">
+            Aqui vamos falar de sobre práticas com embasamento científico, pautadas na ciência ou
+            baseadas em evidências
+            científicas, ou seja, que entregam resultados seguros e mensuráveis, que fazem toda diferença para a
+            trajetória de desenvolvimento da pessoa autista.
+        </p><br>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'fono')">Fonoaudiologia</button>
+            <button class="tablinks" onclick="openCity(event, 'teraocu')">Terapia Ocupacional</button>
+            <button class="tablinks" onclick="openCity(event, 'Musico')">Musicoterapia</button>
+        </div>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'exercícios')">Exercícios Físicos</button>
+            <button class="tablinks" onclick="openCity(event, 'equino')">Equoterapia</button>
+        </div>
+
+        <div id="fono" class="tabcontent">
+            <h2 class="subtitulo">Fonoaudiologia</h2><hr>
+
+            <img class="especialidade" src="/img/fonoaudiologia.webp" width="505" height="275"
+                 alt="fonoaudióloga ensinando exercício vocal para criança"><hr>
+
+            <p class="principal">
+                O profissional de Fisioterapia desempenha importante papel na inclusão e reabilitação da
+                pessoa com autismo. A fonoaudiologia no autismo é uma das áreas que atua no desenvolvimento da criança no
+                espectro, contribuindo para tratar o autismo e reduzir os impactos do TEA.
+            </p>
+            <p class="principal">
+                Ao trabalhar diretamente na audição e fala, o tratamento com a fonoterapia ajuda a criança
+                a a ampliar as
+                habilidades comunicativas, facilitando sua interação social com qualidade, gerando inserção social.
+            </p>
+            <p class="principal">
+                Além disso, auxilia na qualidade de vida quando se trata de problemáticas envolvendo a
+                deglutição (ato de
+                engolir), respiração e mastigação. Esses profissionais também auxiliam a cuidar do atraso da fala, a
+                seletividade alimentar, além de outras demandas.
+            </p><br>
+        </div>
+
+        <div id="teraocu" class="tabcontent">
+            <h2 class="subtitulo">Terapia Ocupacional</h2><hr>
+
+            <img class="especialidade" src="/img/o-que-e-terapia-ocupacional-corpo1.jpg" width="656.6" height="428.3"
+                 alt="Terapeuta ensinando jogos educativos para criança"><hr>
+
+            <p class="principal">
+                A terapia ocupacional no autismo tem o objetivo de promover, manter e desenvolver habilidades necessárias
+                para que as crianças consigam se adaptar de forma funcional ao dia a dia e em diferentes ambientes, como em
+                casa e na escola, por exemplo.
+                O desenvolvimento da autonomia da criança em atividades da vida diária (AVDs), também é uma especialidade da
+                terapia ocupacional. Dentro disso, algumas das principais que a T.O. busca ensinar para a criança são:
+            </p>
+            <ul class="lista">
+                <li class="lista1">Usar o banheiro</li>
+                <li class="lista1">Arrumar o cabelo</li>
+                <li class="lista1">Escovar os dentes</li>
+                <li class="lista1">Tomar banho</li>
+            </ul>
+            <p class="principal">
+                Focando nas singularidades de cada criança e entendendo seu desenvolvimento físico,
+                emocional, sensorial e
+                cognitivo, a terapia ocupacional ajuda em diversos momentos imprtantes para a criança, seja ela atípica ou
+                neurotípica.
+            </p><br>
+        </div>
+
+        <div id="Musico" class="tabcontent">
+            <h2 class="subtitulo">Musicoterapia</h2><hr>
+            <img class="especialidade" src="~/img/musicoterapia002.jpg" width="525" height="338.5" alt="garotas tocando violão"><hr>
+            <p class="principal">
+                A musicoterapia é uma prática terapêutica que ajuda pessoas com autismo a se desenvolverem
+                em diversas áreas como a interação social, comunicação vocal e não-vocal (expressão de emoções e
+                sentimentos), entre outras.
+                Os contatos visual e tátil são igualmente estimulados, assim como a criatividade.
+                Ela garante melhor qualidade de vida para as pessoas autistas, e estimula o desenvolvimento da vocalização e
+                fala, pois os estímulos sensoriais abrangem o processamento auditivo, reconhecimento e discriminação de
+                sons, entre outros.
+            </p><br>
+        </div>
+
+        <div id="exercícios" class="tabcontent">
+            <h2 class="subtitulo">Exercícios Físicos</h2>
+            <p class="principal">
+                Diversas pesquisas mostram que a prática regular de atividade física melhora as habilidades
+                motoras e as habilidades sociais das crianças, jovens e adultos com autismo.
+                Além disso, os exercícios ajudam na comunicação social e regulação da rotina. De acordo com o <i>
+                    Autism
+                    Spectrum Disorder Foundation
+                </i>, no caso dos esportes aquáticos, a água tem um efeito calmante e ajuda
+                a
+                controlar o estresse. A natação ainda envolve conquistas, desafios, disciplina e socialização.
+            </p><br>
+        </div>
+
+        <div id="equino" class="tabcontent">
+            <h2 class="subtitulo">Equoterapia</h2><hr>
+            <img class="especialidade" src="~/img/equoterapia.jpg" width="574.75" height="377.5" alt="menina com autismo fazendo a equoterapia a cavalo"><hr>
+            <p class="principal">
+                A equoterapia - terapia assistida com cavalos - tem sido estudada como uma prática que pode ajudar no
+                desenvolvimento de crianças com o diagnóstico de autismo. Os principais benefícios da equoterapia são a
+                estimulação da sensibilidade tátil, visual e auditiva, melhora do equilíbrio, desenvolvimento da coordenação
+                motora e da percepção dos movimentos.
+            </p>
+        </div>
+
+    </main>
+   
+</body>
+</html>
+

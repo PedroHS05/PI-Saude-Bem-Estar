@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #0066b3;
+}
+
+.logo img {
+    display: block;
+    margin-left: 75px;
+    height: 120px;
+    width: 200px;
+}
+
+.nav-bar {
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.nav-list {
+    flex: 70%;
+    text-align: right;
+    padding: 20px;
+}
+
+    .nav-list a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 20px 16px;
+        font-family: "Roboto", sans-serif;
+        font-weight: bolder;
+    }
+
+        .nav-list a:hover {
+            color: darkorange;
+            border-bottom: 4px solid #ffffff;
+        }
+
+#btn {
+    background-color: cornflowerblue;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+    #btn:hover {
+        border: none;
+        background-color: aliceblue;
+    }
+
+main {
+    margin: 0; /* Remove qualquer margem do main */
+    padding: 0; /* Remove qualquer padding do main */
+    width: 100%; /* Garante que o main ocupe 100% da largura */
+}
+
+.main-content {
+    background-image: url(/img/Home.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh; /* Você pode ajustar isso conforme necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: auto; /* Altera para 100vw para ocupar toda a largura */
+    margin-left: calc(-50vw + 50%); /* Centraliza o conteúdo */
+}
+
+
+.text h1 {
+    display: flex;
+ 
+    align-items: center;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+.button-container {
+    display: flex;
+    font-weight: bolder;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {
+    background-color: cornflowerblue;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+    .btn:hover {
+        background-color: aliceblue;
+        color: #0066b3;
+    }
+
+/*SiteMap*/
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*centraliza verticalmente*/
+}
+
+.sitemap ul,
+.sociais ul {
+    list-style: none;
+}
+
+.sitemap h3 {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.sociais {
+    margin-bottom: auto;
+    margin-right: 20px;
+}
+
+    .sociais ul li {
+        display: inline;
+        margin: auto;
+    }
+
+    .sitemap ul li,
+    .sociais ul li {
+        margin-bottom: 10px;
+    }
+
+    .sitemap a,
+    .sociais a {
+        text-decoration: none;
+        color: #333;
+    }
+
+        .sitemap a:hover,
+        .sociais a:hover {
+            color: darkorange;
+        }
+
+.info {
+    text-align: center;
+}
+
+    .info p {
+        margin: 0;
+        line-height: 30px;
+    }
